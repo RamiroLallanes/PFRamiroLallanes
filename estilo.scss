@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Handjet:wght@200&family=Oswald:wght@200&family=Tangerine&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Handjet', cursive;
+    font-family: 'Tangerine', cursive;
+    height: calc(100vh - 80px);
+}
+
+/*Inicia barra navegacion*/
+a img {
+    border-radius: 70%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+
+}
+
+.navbar {
+    font-size: 30px;
+    background-color: #fdcae1 !important;
+    text-shadow: whitesmoke 0px 0px 5px;
+    box-shadow: 0px 0px 5px;
+
+}
+
+.nav-link {
+    color: whitesmoke !important;
+    text-shadow: whitesmoke 0px 0px 5px;
+}
+
+.nav-link:hover {
+    color: #ca37cf;
+}
+
+@media only screen and (min-width:0) and (max-width: 751px) {
+    .navbar-collapse {
+        background-color: #fdcae1;
+        display: flex;
+        justify-content: center !important;
+
+    }
+
+}
+
+
+/*Fin barra navegacion*/
+
+/*Inicia Jumbotron*/
+
+.jumbotron {
+    background-image: url(/Multimedia/fotoindex.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    fill-opacity: 50%;
+}
+
+.nav__span {
+    font-size: 30px;
+
+}
+
+.nav__logo {
+    border-radius: 50%;
+    height: 100px;
+}
+
+.h1__jumbotron {
+    font-size: 70px;
+    text-shadow: #ffffff 0px 0px 5px;
+}
+
+
+
+@media only screen and (min-width:0) and (max-width: 576px) {
+    .h1__jumbotron {
+        font-size: 40px;
+
+    }
+
+}
+
+
+/*Termina Jumbotron  */
+
+/*Main inicia */
+
+#section2 {
+    background-color: antiquewhite;
+}
+
+#imagen1 {
+    border-radius: 50%;
+    height: 200px;
+    margin: 3px;
+}
+
+.espiritual2 {
+    font-size: 300%;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+.section3 {
+    height: 0vh;
+    background-color: bisque;
+}
+
+#logo2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+h2 {
+    font-size: 300%;
+    display: flex;
+    justify-content: start;
+    color: rgb(66, 11, 63)
+}
+
+/* Main Termina  */
+
+/* Carousel empieza  */
+
+.c-item {
+    height: 480px;
+
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel fin  */
+
+
+section .imagenes1:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Inicia footer*/
+
+footer {
+    padding: 60px 0px;
+    width: 100%;
+    background-color: #fdcae1;
+    height: 300px;
+    font-size: 50px;
+    text-align: bottom;
+}
+
+footer i {
+    color: #ca37cf;
+    font-size: 30px;
+}
+
+@media only screen and (min-width:0) and (max-width: 576px) {
+    footer {
+        font-size: 30px;
+        height: auto;
+        align-items: center;
+
+    }
+
+}
+
+@media only screen and (min-width:0) and (max-width: 576px) {
+    .redes {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+}
+
+
+/* Termina footer*/
+
+/*                 PAGINA CURSOS          */
+
+
+.curso{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#cursoh2 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    background-color: antiquewhite;
+}
+
+
+.main__cursos {
+    
+    background-color: #ffffff;
+
+}
+
+
+.cursos img {
+    height: 500px;
+    margin: 10px;
+}
+
+.precios {
+    font-size: 50px;
+}
+
+
+.cursos1 img {
+    height: 500px;
+    margin: 10px;
+
+}
+
+@media only screen and (min-width:0) and (max-width: 998px) {
+    .cursos{
+        
+        height: 60px;
+        width: auto;
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    .cursos1{height: 60px;
+        width: auto;
+        display: flex;
+        justify-content: end;
+
+    }
+
+}
+
+/*                 INICIA MULTIMEDIA        */
+
+@media only screen and (min-width:0) and (max-width: 576px) {
+
+    .imagenes1{
+        height: 100px;
+        width: auto;
+        display: flex;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+} 
+
+
+
+body {
+    background-color:aliceblue ;
+    height: calc(100vh - 80px);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fondoM {
+    height: 70vh;
+
+}
+
+#multi {
+    margin: 20px;
+    display: flex;
+    width: 600px;
+    height: 500px;
+}
+
+.imagenes1 {
+    width: 200px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 1s;
+
+}
+
+.video {
+    height: 60vh;
+}
+
+.video2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+}
+
+
+
+/*       TERMINA  MULTIMEDIA        */
+
+/*          INICIA TESTIMONIOS       */
+
+
+.row{
+    height: 700px;
+    background-image: url(/Multimedia/FondoTestimonios.jpg);
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: black 0px 0px 2px;
+    color: antiquewhite;
+    padding: 10px;
+    width:100%;
+    margin: 0;
+
+}
+
+.row img{
+    height: 80px;
+    border-radius: 10%;
+    
+    
+}
+
+.col-md-6{
+    background-color: rgba(0, 0, 0, 0.137);
+    
+}
+
+
+.class {
+    height: 400px;
+}
+
+.fondoT {
+    height: 800px;
+    font-size: 200%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/Multimedia/FondoTestimonios.jpg);
+    background-size: cover;
+}
+
+#cursoh2 {
+    margin-bottom: 0px;
+    box-shadow: black 0px 0px 10px;
+
+}
+
+
+
+.testimonios {
+    background-color: rgba(0, 0, 0, 0.158);
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 7%;
+    height: 600px;
+    font-family: 'Edu SA Beginner', ;
+    font-family: 'Handjet', ;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Tangerine', ;
+    text-shadow: 2px 3px black;
+    color: #ffffff;
+    border: solid 1px white;
+    box-shadow: 1px 2px black;
+    font-size: 30px;
+
+}
+
+.testimonios img {
+    border-radius: 30%;
+    height: 90px;
+    align-items: flex-end;
+}
+
+@media only screen and (min-width:0) and (max-width:1274px) {
+    .row{
+        font-size: 20px;
+        height: 500px;
+        width: 100%;
+        
+    
+    }
+}
+
+
+    
+
+    @media only screen and (min-width:0) and (max-width: 535px) {
+        #cursoh2 {
+            font-size: 40px;
+        
+
+        }
+        
+        .row img {
+    
+            height: 30px;
+            width: auto;
+            border-radius: 10%;
+            
+    
+    }
+
+        @media (max-width: 768px) {
+            .testimonios {
+                font-size: 16px;
+                width: 100%;
+                margin-bottom: 15px;
+                height: 500px;
+            }
+        }
+
+    }
+
+    /*             TERMINA TESTIMONIOS      */
+
+    /* INICA CONTACTO*/
+
+
+    .fondoC {
+        height: 1000px;
+    }
+
+
+
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .mail {
+        margin: 10px 20px 10px 20px;
+    }
+
+    .mail2 {
+        font-size: 30px;
+
+    }
+
+    .mail3 {
+        margin: 10px 20px 10px 20px;
+        font-size: 30px;
+
+
+
+    }
+    #consulta{
+        height: 200px;
+    }
+
+    @media only screen and (min-width:0) and (max-width: 576px) {
+    
+        .mapa{
+            height: 300px;
+            margin: 5px;
+            width: auto;
+        }
+    
+    
+    }
+    
+
+
+/* TERMINA CONTACTO*/
