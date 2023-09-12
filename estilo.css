@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Tangerine&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Handjet:wght@200&family=Oswald:wght@200&family=Tangerine&display=swap");
-* {
+/* mixin inicia */
+b * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -158,11 +159,6 @@ footer i {
 }
 /* Termina footer*/
 /*                 PAGINA CURSOS          */
-.curso {
-  display: flex;
-  justify-content: space-between;
-}
-
 #cursoh2 {
   display: flex;
   justify-content: center;
@@ -170,22 +166,9 @@ footer i {
   background-color: antiquewhite;
 }
 
-.main__cursos {
-  background-color: #ffffff;
-}
-
-.cursos img {
-  height: 500px;
-  margin: 10px;
-}
-
-.precios {
-  font-size: 50px;
-}
-
-.cursos1 img {
-  height: 500px;
-  margin: 10px;
+.container__curso {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 0) and (max-width: 998px) {
@@ -374,4 +357,9 @@ nav {
     width: auto;
   }
 }
+body {
+  background: #800080;
+  background: linear-gradient(to right, #ffc0cb, #800080);
+}
+
 /* TERMINA CONTACTO*//*# sourceMappingURL=estilo.css.map */

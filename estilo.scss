@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Handjet:wght@200&family=Oswald:wght@200&family=Tangerine&display=swap');
 
+/* mixin inicia */
+@mixin imagenes{
+    border-radius: 70%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+@mixin fondo{
+    background: #800080;  
+    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  
+    background: linear-gradient(to right, #ffc0cb, #800080); 
+
+}
+
+b
+
+/* mixin termina */
 
 * {
     margin: 0%;
@@ -18,11 +36,7 @@ body {
 
 /*Inicia barra navegacion*/
 a img {
-    border-radius: 70%;
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-
+    @include imagenes()
 }
 
 .navbar {
@@ -198,11 +212,9 @@ footer i {
 /*                 PAGINA CURSOS          */
 
 
-.curso{
-    display: flex;
-    justify-content: space-between;
-    
-}
+
+
+
 
 #cursoh2 {
     display: flex;
@@ -211,33 +223,15 @@ footer i {
     background-color: antiquewhite;
 }
 
-
-.main__cursos {
-    
-    background-color: #ffffff;
-
-}
-
-
-.cursos img {
-    height: 500px;
-    margin: 10px;
-}
-
-.precios {
-    font-size: 50px;
-}
-
-
-.cursos1 img {
-    height: 500px;
-    margin: 10px;
+.container__curso{
+    display: flex;
+    justify-content: space-between;
 
 }
 
 @media only screen and (min-width:0) and (max-width: 998px) {
-    .cursos{
-        
+    .cursos {
+
         height: 60px;
         width: auto;
         display: flex;
@@ -246,7 +240,8 @@ footer i {
 
     }
 
-    .cursos1{height: 60px;
+    .cursos1 {
+        height: 60px;
         width: auto;
         display: flex;
         justify-content: end;
@@ -259,7 +254,7 @@ footer i {
 
 @media only screen and (min-width:0) and (max-width: 576px) {
 
-    .imagenes1{
+    .imagenes1 {
         height: 100px;
         width: auto;
         display: flex;
@@ -270,12 +265,12 @@ footer i {
 
 
 
-} 
+}
 
 
 
 body {
-    background-color:aliceblue ;
+    background-color: aliceblue;
     height: calc(100vh - 80px);
     background-size: cover;
     background-attachment: fixed;
@@ -320,7 +315,7 @@ body {
 /*          INICIA TESTIMONIOS       */
 
 
-.row{
+.row {
     height: 700px;
     background-image: url(/Multimedia/FondoTestimonios.jpg);
     background-size: cover;
@@ -328,21 +323,21 @@ body {
     text-shadow: black 0px 0px 2px;
     color: antiquewhite;
     padding: 10px;
-    width:100%;
+    width: 100%;
     margin: 0;
 
 }
 
-.row img{
+.row img {
     height: 80px;
     border-radius: 10%;
-    
-    
+
+
 }
 
-.col-md-6{
+.col-md-6 {
     background-color: rgba(0, 0, 0, 0.137);
-    
+
 }
 
 
@@ -392,92 +387,96 @@ body {
 }
 
 @media only screen and (min-width:0) and (max-width:1274px) {
-    .row{
+    .row {
         font-size: 20px;
         height: 500px;
         width: 100%;
-        
-    
+
+
     }
 }
 
 
-    
 
-    @media only screen and (min-width:0) and (max-width: 535px) {
-        #cursoh2 {
-            font-size: 40px;
-        
 
+@media only screen and (min-width:0) and (max-width: 535px) {
+    #cursoh2 {
+        font-size: 40px;
+
+
+    }
+
+    .row img {
+
+        height: 30px;
+        width: auto;
+        border-radius: 10%;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .testimonios {
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 15px;
+            height: 500px;
         }
-        
-        .row img {
-    
-            height: 30px;
-            width: auto;
-            border-radius: 10%;
-            
-    
     }
 
-        @media (max-width: 768px) {
-            .testimonios {
-                font-size: 16px;
-                width: 100%;
-                margin-bottom: 15px;
-                height: 500px;
-            }
-        }
+}
 
+/*             TERMINA TESTIMONIOS      */
+
+/* INICA CONTACTO*/
+
+
+.fondoC {
+    height: 1000px;
+}
+
+
+
+
+nav {
+    padding: 10px 0px;
+}
+
+.mail {
+    margin: 10px 20px 10px 20px;
+}
+
+.mail2 {
+    font-size: 30px;
+
+}
+
+.mail3 {
+    margin: 10px 20px 10px 20px;
+    font-size: 30px;
+
+
+
+}
+
+#consulta {
+    height: 200px;
+}
+
+@media only screen and (min-width:0) and (max-width: 576px) {
+
+    .mapa {
+        height: 300px;
+        margin: 5px;
+        width: auto;
     }
 
-    /*             TERMINA TESTIMONIOS      */
 
-    /* INICA CONTACTO*/
+}
 
-
-    .fondoC {
-        height: 1000px;
-    }
-
-
-
-
-    nav {
-        padding: 10px 0px;
-    }
-
-    .mail {
-        margin: 10px 20px 10px 20px;
-    }
-
-    .mail2 {
-        font-size: 30px;
-
-    }
-
-    .mail3 {
-        margin: 10px 20px 10px 20px;
-        font-size: 30px;
-
-
-
-    }
-    #consulta{
-        height: 200px;
-    }
-
-    @media only screen and (min-width:0) and (max-width: 576px) {
-    
-        .mapa{
-            height: 300px;
-            margin: 5px;
-            width: auto;
-        }
-    
-    
-    }
-    
+body{
+    @include fondo()
+}
 
 
 /* TERMINA CONTACTO*/
